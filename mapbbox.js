@@ -64,11 +64,11 @@ function endsWith(str, suffix) {
 program
 .version('0.0.1')
 .usage('[options]')
-.option('-b, --bbox <lon1,lat1,lon2,lat2>', 'a bounding box', list, [])
-.option('-h, --height <n>', 'image height in px', parseFloat)
-.option('-w, --width <n>', 'image width in px', parseFloat)
-.option('-o, --output [path]', 'output png with optional path')
-.option('-q, --quiet', 'do not print output path (only works with -o/--output)')
+.option('-b, --bbox <lon1,lat1,lon2,lat2>', '[required] bounding box', list, [])
+.option('-h, --height <n>', '[required] image height in px', parseFloat)
+.option('-w, --width <n>', '[required] image width in px', parseFloat)
+.option('-o, --output [path]', '[optional] output png with optional path')
+.option('-q, --quiet', '[optional] do not print output path (only works with -o/--output)')
 .parse(process.argv);
 
 program.bbox = spaced_args();

@@ -23,17 +23,17 @@ Usage
 ```
 $ ./mapbbox.js --help 
 
- Usage: mapbbox [options] <file ...>
+  Usage: mapbbox [options]
 
- Options:
+  Options:
 
     -h, --help                        output usage information
     -V, --version                     output the version number
-    -b, --bbox <lon1,lat1,lon2,lat2>  a bounding box
-    -h, --height <n>                  image height in px
-    -w, --width <n>                   image width in px
-    -o, --output [path]               output png with optional path
-    -q, --quiet                       do not print output path (only works with -o/--output)
+    -b, --bbox <lon1,lat1,lon2,lat2>  [required] bounding box
+    -h, --height <n>                  [required] image height in px
+    -w, --width <n>                   [required] image width in px
+    -o, --output [path]               [optional] output png with optional path
+    -q, --quiet                       [optional] do not print output path (only works with -o/--output)
 ```
 
 Example
