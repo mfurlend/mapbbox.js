@@ -10,7 +10,7 @@ This node script generates (and optionally downloads) maps through MapBox's stat
 Installation
 -----------
 1. Clone this repository
-2. `cd mappbox`
+2. `cd mapbbox`
 3. `npm install` 
 4. Copy/paste your MapBox access token into the file `mapbox_token`
 
