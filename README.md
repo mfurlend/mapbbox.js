@@ -21,7 +21,7 @@ Usage
 -----------
 
 ```
-$ ./mapbox.js --help 
+$ ./mapbbox.js --help 
 
  Usage: mapbbox [options] <file ...>
 
