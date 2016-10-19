@@ -1,0 +1,1 @@
+https://api.mapbox.com/v4/mapbox.emerald/<lng>,<lat>,<zoom>,<bearing>,<pitch>/<width>x<height>.png?access_token=<token>&attribution=false
