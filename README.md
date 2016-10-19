@@ -49,12 +49,12 @@ $ ./mapbbox.js -h 480 -w 640 -b -74.259094,40.477398,-73.700165,40.91758
 
 https://api.mapbox.com/v4/mapbox.emerald/-73.9796295,40.697489000000004,10/640x480.png?access_token=<my access token>
 
-$ ./mapbbox.js -h 480 -w 640 -b -74.259094,40.477398,-73.700165,40.91758 -o NYC.png
-NYC.png
+$ ./mapbbox.js -c -99.985007,37.191870 -z 3 -w 600 -h 480 -o USA.png
+USA.png
 
-$ open NYC.png
+$ open USA.png
 ```
-![alt NYC image output](http://furlender.com/img/NYC.png "NYC image output")
+![alt USA image output](http://furlender.com/img/USA.png "USA image output")
 
 To do something with the image immediately, without having to run a separate command (such as the `open` command above), pipe the output to `xargs`: 
 
