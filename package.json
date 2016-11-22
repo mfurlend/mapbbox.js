@@ -10,7 +10,8 @@
     "commander": "^2.9.0",
     "epipebomb": "^0.1.1",
     "geo-viewport": "*",
-    "request": "^2.67.0"
+    "request": "^2.67.0",
+    "tilebelt": "^1.0.1"
   },
   "bin": {
     "mapbbox": "mapbbox.js"
