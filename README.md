@@ -1,4 +1,4 @@
-
+**
 mapbbox.js
 =============
 This node script generates (and optionally downloads) maps through MapBox's static maps API.
@@ -54,3 +54,4 @@ $ open NYC.png
 To do something with the image immediately, without having to run a separate command (such as the `open` command above), pipe the output to `xargs`: 
 
 `$ ./mapbbox.js -h 480 -w 640 -b -74.259094,40.477398,-73.700165,40.91758 -o NYC.png | xargs open`
+**

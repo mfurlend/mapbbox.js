@@ -75,12 +75,14 @@ program.bbox = spaced_args();
 program.output = get_output_path();
 bounds = program.bbox;
 size = [program.width, program.height];
-var vp = geoViewport.viewport(bounds, size);
+var vp = geoViewport.viewport(bounds, size, 4, 8, 512);
+var real_bounds = geoViewport.bounds(vp.center, vp.zoom, size, 256)
+console.log('real_bounds',real_bounds);
 var mapbox_token = fs.readFileSync(__dirname +'/mapbox_token', 'utf8');
 if (!mapbox_token || !mapbox_token.length){
     process.stdout.write("The file mapbox_token must contain your MapBox API access token.");
 }
-var mapbox_url_template = 'https://api.mapbox.com/v4/mapbox.emerald/<lng>,<lat>,<zoom>/<width>x<height>.png?access_token=<token>';
+var mapbox_url_template = fs.readFileSync(__dirname +'/mapbox_url_template', 'utf8') || 'https://api.mapbox.com/v4/mapbox.emerald/<lng>,<lat>,<zoom>/<width>x<height>.png?access_token=<token>';
 var url = mapbox_url_template
             .replace('<token>',mapbox_token)
             .replace('<width>',program.width)
@@ -89,6 +91,7 @@ var url = mapbox_url_template
             .replace('<lat>',vp.center[1])
             .replace('<lng>',vp.center[0]);
 
+console.log(url);
 if (!program.output) {
     process.stdout.write(url);
 } else {

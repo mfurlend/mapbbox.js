@@ -9,7 +9,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "epipebomb": "^0.1.1",
-    "geo-viewport": "^0.1.1",
+    "geo-viewport": "*",
     "request": "^2.67.0"
   },
   "bin": {
