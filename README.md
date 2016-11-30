@@ -24,20 +24,21 @@ Usage
 ```
 $ ./mapbbox.js --help 
 
-  Usage: mapbbox [options]
+    Usage: mapbbox [options]
 
   Options:
 
     -h, --help                        output usage information
     -V, --version                     output the version number
     -b, --bbox <lon1,lat1,lon2,lat2>  bounding box
-    -c, --center <lon1,lat1>          center point [requires zoom]
-    -z, --zoom <n>                    map zoom level [requires center]
+    -c, --center <lon1,lat1>          center point <requires zoom>
+    -z, --zoom <n>                    map zoom level <requires center>
     -e, --bearing <0-360>             bearing [default = 0]
     -p, --pitch <0-60>                pitch [default = 0]
-    -h, --height <n>                  [required] image height in px
-    -w, --width <n>                   [required] image width in px
+    -h, --height <n>                  <required> image height in px
+    -w, --width <n>                   <required> image width in px
     -o, --output [path]               [optional] output png with optional path
+    -g, --georeference <kml|txt>      [optional] output web mercator image bounds to txt or kml <requires output>
     -q, --quiet                       [optional] do not print output path (only works with -o/--output)
 ```
 

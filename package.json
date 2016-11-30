@@ -7,11 +7,13 @@
     "node": ">=0.10"
   },
   "dependencies": {
+    "abaculus": "^2.0.3",
     "commander": "^2.9.0",
     "epipebomb": "^0.1.1",
     "geo-viewport": "*",
+    "mkdirp": "^0.5.1",
     "request": "^2.67.0",
-    "tilebelt": "^1.0.1"
+    "string-template": "^1.0.0"
   },
   "bin": {
     "mapbbox": "mapbbox.js"
